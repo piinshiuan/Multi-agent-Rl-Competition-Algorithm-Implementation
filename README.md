@@ -35,7 +35,7 @@ Equation 7-8 are approximates that give us the payoff for the corresponding agen
 
 ## Experiment Environment 
 > ### Derk Gym
-![](https://i.imgur.com/ltvMpOr.jpg)
+![](https://i.imgur.com/ltvMpOr.jpg width="0%")
 **Figure 1: Derk Gym**
 
 [Derk Gym](http://docs.gym.derkgame.com/) is a multiplayer Online Battle Arena RL-based environment. Two teams of three battle each other while trying to defend their own “statue”. Each team is composed of three units. The goal of the game is trying to attack the opponent's statue and units while defending your own. 
