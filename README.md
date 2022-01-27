@@ -53,7 +53,7 @@ In our implementation, we will construct two networks: value network, and policy
 
 We construct our model architecture team based because of our environment setting, see Figure 1. We view the reward, action, and observation from a team perspective.  
 
-<img src="https://i.imgur.com/oTYTa3T.jpg" width="70%"/>
+<img src="https://i.imgur.com/oTYTa3T.jpg" width="80%"/>
 
 
 Based on the algorithm provided by the paper, our training process can be divided into two parts: Interacting with the environment and Updating Policy and Value Network.
