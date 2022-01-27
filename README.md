@@ -64,7 +64,7 @@ Based on the algorithm provided by the paper, our training process can be divide
 When interacting with the environment, we first obtain the observation state. Dimensions for the obersevation include hitpoints of the character, distance and angle to alies and foes, whether an ability is ready, etc, which sums up to have 64 values for each player. We observe a (64,1) state space for each player and hence a (3,64,1) state space for each team.
 
 ##### Action
-The actions defined by Derk's Gym take five dimensions. The five dimensions being: 1. MoveX. 2. Rotate. 3. ChaseFocus. 4. CastingSlot. 5. ChangeFocus. Hence for every player’s we need to output an action space of (5,1), and each team’s action output will be of dimension (3,5,1). 
+The actions defined by Derk's Gym take five dimensions. The five dimensions being: 1. MoveX. 2. Rotate. 3. ChaseFocus. 4. CastingSlot. 5. ChangeFocus. Hence for each player we need to output an action space of (5,1), and each team’s action output will be of dimension (3,5,1). 
 
 When training, we implement epsilon-greedy algorithm to explore the action space. Setting the epsilon to a constant(0.2 in our case), we have a certain chance of choosing a random action to take, and the other 0.8 will follow the policy(the actor model) we've trained. A reward will be recieved immediately after an action is taken.
 
