@@ -35,19 +35,19 @@ Equation 7-8 are approximates that give us the payoff for the corresponding agen
 
 ## Experiment Environment 
 > ### Derk Gym
-<img src="https://i.imgur.com/ltvMpOr.jpg" width="10%"/>
+<img src="https://i.imgur.com/ltvMpOr.jpg" width="50%"/>
 **Figure 1: Derk Gym**
 
 [Derk Gym](http://docs.gym.derkgame.com/) is a multiplayer Online Battle Arena RL-based environment. Two teams of three battle each other while trying to defend their own “statue”. Each team is composed of three units. The goal of the game is trying to attack the opponent's statue and units while defending your own. 
 
 > ### Implementation
 
-<img src="https://i.imgur.com/TofC8Qa.jpg" width="80%"/>
+<img src="https://i.imgur.com/TofC8Qa.jpg" width="70%"/>
 **Figure 2: Network**
 
 In our implementation, we will construct two networks: value network, and policy network. Value network returns “how good” the current state is for a player, we view it as the payoff matrix for a given state. Policy(Actor) network will learn to give an action output by giving a particular input.
 
-<img src="https://i.imgur.com/Nt5Rzwu.jpg" width="80%"/>
+<img src="https://i.imgur.com/Nt5Rzwu.jpg" width="70%"/>
 **Figure 3: Model Architecture**
 
 
@@ -80,25 +80,25 @@ In our testing environment, the parameter settings are: Trajectory(T):3000 for t
 
 We can see the training process below.
 
-<img src="https://i.imgur.com/R8x8gw0.png" width="80%"/>
+<img src="https://i.imgur.com/R8x8gw0.png" width="60%"/>
 During the first 50 training steps, we find that agents do not take good moves, which is reasonable since the agents do not have enough samples and are mostly taking random actions.
 
-<img src="https://i.imgur.com/BAQTsxM.png" width="80%"/>
+<img src="https://i.imgur.com/BAQTsxM.png" width="60%"/>
 After training 500 steps, we find out that agents can focus the opponent and group up with its teammates.
 
-<img src="https://i.imgur.com/rmIZDJV.png" width="80%"/>
+<img src="https://i.imgur.com/rmIZDJV.png" width="60%"/>
 After 1200 steps, one side found out that grouping up and attacking a statue can result in high rewards, the other team also learned how to defend an attack.
 
-<img src="https://i.imgur.com/RKBjv8A.png" width="80%"/>
+<img src="https://i.imgur.com/RKBjv8A.png" width="60%"/>
 Finally after 2500 steps, both teams had part of their team members on attack roles and the others on defence. We can clearly observe that teams seem to cooperate with each other while competing with its opponent.
 
 ### Test Result
-<img src="https://i.imgur.com/3KZOQ4f.png" width="90%"/>
+<img src="https://i.imgur.com/3KZOQ4f.png" width="70%"/>
 Based on our assumption that the two competitive agents can pin each other from getting a higher reward. In a zero-sum setting, when two agents compete with each other, the final total reward should be close to 0.
 
 To better compare our result, we set two groups: random agent vs random agent, trained agent vs trained agent. Regarding our testing result, we could find out that the pattern of the trained agent is closer to 0. The experiment met our expectations.
 
-<img src="https://i.imgur.com/QRZOtg2.png" />
+<img src="https://i.imgur.com/QRZOtg2.png" width="80%"/>
 Moreover, we tried out different learning rates and discount factor settings. Unfortunately, we couldn't find a specific pattern to describe the best setting.
 
 ## Future work and limitation
