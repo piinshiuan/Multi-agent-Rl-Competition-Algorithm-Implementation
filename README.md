@@ -23,7 +23,7 @@ Second, how do we obtain the agents given the Q value. We use policy gradient to
 
 
 ### Main Structure
-![](https://i.imgur.com/6QV0c3r.png)
+<img src="https://i.imgur.com/6QV0c3r.png" width="80%"/>
 
 In our implementation, we follow the algorithm provided by the paper roughly, and change some settings to fit our environment. We play T number of games and for each game then update the agents, x and y, using policy gradient as stated in equation 2-5.
 
@@ -51,7 +51,8 @@ In our implementation, we will construct two networks: value network, and policy
 **Figure 3: Model Architecture**
 
 
-We construct our model architecture team based because of our environment setting, see Figure 1. We view the reward, action, and observation from a team perspective.
+We construct our model architecture team based because of our environment setting, see Figure 1. We view the reward, action, and observation from a team perspective.  
+
 <img src="https://i.imgur.com/oTYTa3T.jpg" width="70%"/>
 
 
