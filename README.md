@@ -110,3 +110,7 @@ Due to limited resources, we couldn't extend our training time and try more para
 
 ### Future work
 We may work on experimenting with different algorithms and also test on more environments. In this research, we give more focus on multi-agent competition, we can try to train multi-agent RL with cooperation in the future to observe different results.
+
+## References
+1. Chen-Yu Wei, Chung-Wei Lee, Mengxiao Zhang, Haipeng Luo.(2021). Last-iterate Convergence of Decentralized Optimistic Gradient Descent/Ascent in Infinite-horizon Competitive Markov Games. Retrieved from https://arxiv.org/abs/2102.04540
+2.  Fredrik Norén, Mount Rouke. (2020). Derk's Gym. http://docs.gym.derkgame.com/
